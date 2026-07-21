@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DRIVER-.#####",
+ "creation": "2026-07-21 16:46:54.346720",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "driver_name",
+  "phone_number",
+  "column_break_uwvm",
+  "license_number",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Driver name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "column_break_uwvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LIcense number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Available",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "On Trip\nOff Duty\nAvailable"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-21 20:32:56.300809",
+ "modified_by": "Administrator",
+ "module": "Fleet_Management",
+ "name": "Driver",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
