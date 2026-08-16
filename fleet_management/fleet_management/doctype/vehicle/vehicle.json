@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:Vehicle-{###}",
+ "autoname": "field:registration_no",
  "creation": "2026-07-21 15:47:44.566642",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,8 +12,7 @@
   "driver",
   "column_break_aysr",
   "vehicle_type",
-  "status",
-  "amended_from"
+  "status"
  ],
  "fields": [
   {
@@ -55,26 +54,16 @@
    "fieldtype": "Link",
    "label": "Driver ",
    "options": "Driver"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Vehicle",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-21 20:55:04.586745",
+ "modified": "2026-08-16 14:19:24.324064",
  "modified_by": "Administrator",
  "module": "Fleet_Management",
  "name": "Vehicle",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -11,12 +11,14 @@
   "start_location",
   "start_date",
   "distance_km",
+  "trip_expenses",
   "column_break_xvuy",
   "driver",
   "end_location",
   "end_date",
   "status",
-  "amended_from"
+  "amended_from",
+  "total_expense"
  ],
  "fields": [
   {
@@ -84,13 +86,25 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "trip_expenses",
+   "fieldtype": "Table",
+   "label": "Trip Expenses",
+   "options": "Trip Expense"
+  },
+  {
+   "fieldname": "total_expense",
+   "fieldtype": "Currency",
+   "label": "Total Expense",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-21 20:39:08.402374",
+ "modified": "2026-08-13 14:30:50.944964",
  "modified_by": "Administrator",
  "module": "Fleet_Management",
  "name": "Trip",

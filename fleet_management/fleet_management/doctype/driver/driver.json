@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "DRIVER-.#####",
+ "autoname": "field:driver_name",
  "creation": "2026-07-21 16:46:54.346720",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -18,7 +18,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Driver name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "phone_number",
@@ -48,11 +49,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-21 20:32:56.300809",
+ "modified": "2026-08-16 14:20:09.851440",
  "modified_by": "Administrator",
  "module": "Fleet_Management",
  "name": "Driver",
- "naming_rule": "By \"Naming Series\" field",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
