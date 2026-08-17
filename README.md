@@ -1,4 +1,4 @@
-## Demo Video
+## Demo Video and screenshot
 
 [Watch the full demo](https://www.loom.com/share/447d47d15cff4a209d89002e1749ae6a)
 
