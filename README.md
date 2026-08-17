@@ -4,6 +4,39 @@
 
 The video covers Vehicle, Driver, and Trip creation with auto-calculated expenses. Fuel Management and Maintenance Log are shown below via screenshots.
 
+## API Usage
+
+The app exposes standard Frappe REST endpoints. API calls were tested using Postman.
+
+**Authentication:** Generate an API Key and Secret from **My Settings → API Access** in the Frappe desk. In Postman, add a header:
+- Key: `Authorization`
+- Value: `token API_KEY:API_SECRET`
+
+### Fetch all vehicles (GET)
+
+- Method: `GET`
+- URL: `http://your-site/api/resource/Vehicle`
+- Headers: `Authorization: token API_KEY:API_SECRET`
+
+![GET Vehicle](docs/screenshots/api-get-vehicle.png)
+
+### Create a vehicle (POST)
+
+- Method: `POST`
+- URL: `http://your-site/api/resource/Vehicle`
+- Headers: `Authorization: token API_KEY:API_SECRET`, `Content-Type: application/json`
+- Body (raw JSON):
+```json
+{
+  "registration_no": "RJ14XY9999",
+  "model": "Maruti Eeco",
+  "vehicle_type": "Car",
+  "status": "Active"
+}
+```
+
+![POST Vehicle](docs/screenshots/api-post-vehicle.png)
+
 ### Fuel Management
 ![Fuel Management](docs/screenshots/fuel-management.jpeg)
 
