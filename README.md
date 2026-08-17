@@ -1,3 +1,18 @@
+## Demo Video
+
+[Watch the full demo](https://www.loom.com/share/447d47d15cff4a209d89002e1749ae6a)
+
+The video covers Vehicle, Driver, and Trip creation with auto-calculated expenses. Fuel Management and Maintenance Log are shown below via screenshots.
+
+### Fuel Management
+![Fuel Management](docs/screenshots/fuel-management.jpeg)
+
+*Total price is auto-calculated from fuel quantity × per liter price.*
+
+### Maintenance Log
+![Maintenance Log](docs/screenshots/maintenance-log.jpeg)
+
+
 # Fleet Management
 
 A Frappe app to manage a vehicle fleet end-to-end — vehicles, drivers, trips, fuel logs, and maintenance records — built on the Frappe Framework.
