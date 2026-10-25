@@ -10,7 +10,9 @@
   "phone_number",
   "column_break_uwvm",
   "license_number",
-  "status"
+  "status",
+  "trial",
+  "dynamic_link_ofsw"
  ],
  "fields": [
   {
@@ -44,12 +46,23 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "On Trip\nOff Duty\nAvailable"
+  },
+  {
+   "fieldname": "trial",
+   "fieldtype": "Link",
+   "label": "trial",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "dynamic_link_ofsw",
+   "fieldtype": "Dynamic Link",
+   "options": "trial"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-16 14:20:09.851440",
+ "modified": "2026-08-23 01:30:51.605990",
  "modified_by": "Administrator",
  "module": "Fleet_Management",
  "name": "Driver",

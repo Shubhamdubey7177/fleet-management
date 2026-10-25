@@ -1,0 +1,42 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-08-13 19:52:01.922549",
+ "disable_prepared_report_automation": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "doctype_to_sync": [],
+ "filters": [
+  {
+   "default": "All",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "mandatory": 1,
+   "options": "All\nScheduled\nOngoing\nCompleted",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-09-25 16:02:29.708463",
+ "modified_by": "Administrator",
+ "module": "Fleet_Management",
+ "name": "Trip Summary Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    t.name AS \"Trip:Link/Trip:150\",\r\n    v.name AS \"Vehicle:Link/Vehicle:150\",\r\n    d.name AS \"Driver:Link/Driver:150\",\r\n    t.status AS \"Status:120\",\r\n    t.start_date AS \"Start Date:Date:120\",\r\n    t.end_date AS \"End Date:Date:120\",\r\n    t.distance_km AS \"Distance:Float:100\"\r\nFROM `tabTrip` t\r\nLEFT JOIN `tabVehicle` v\r\n    ON t.vehicle = v.name\r\nLEFT JOIN `tabDriver` d\r\n    ON t.driver = d.name\r\nWHERE\r\n    %(status)s = 'All'\r\n    OR t.status = %(status)s\r\nORDER BY\r\n    t.start_date DESC",
+ "ref_doctype": "Trip",
+ "report_name": "Trip Summary Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "snapshot_report": 0,
+ "timeout": 0
+}

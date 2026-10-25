@@ -89,7 +89,6 @@ class Trip(Document):
                 )
 
 
-
     def on_submit(self):
 
         if self.status == "Completed":
